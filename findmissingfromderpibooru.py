@@ -21,6 +21,7 @@ import urllib.request
 import urllib.error
 import shutil
 import pickle
+import config
 
 failedthreads = []
 threads = []
@@ -72,7 +73,7 @@ if os.path.isfile(primaryname + "_images_orphans.db.txt"):
                                                     "--BoundAss--").encode(),
                             headers={
                                 "Host": "derpiboo.ru",
-                                "User-Agent": "Cull Bot (Python 3.x)",
+                                "User-Agent": config.UA.format(vinfo=sys.version_info),
                                 "Cache-Control": "no-cache",
                                 "Accept": "*/*",
                                 "Content-Type": "multipart/form-data; boundary=BoundAss"
