@@ -67,6 +67,8 @@ with open(primaryname, mode="rt") as f:
                     docont = False
                     error += 1
                 else:
+                    if int(line) == highestpickledthread:
+                        threads = threads[:-1]
                     threads.append(jsonresp)
             except Exception as e:
                 print("")
