@@ -15,12 +15,7 @@
 
 import os
 import sys
-import codecs
-import urllib.request
-import urllib.error
-import json
 import pickle
-import config
 import shutil
 
 primaryname = sys.argv[1]

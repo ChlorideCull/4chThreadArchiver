@@ -19,7 +19,6 @@ import sys
 import codecs
 import urllib.request
 import urllib.error
-import json
 import shutil
 import pickle
 

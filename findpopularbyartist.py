@@ -16,9 +16,6 @@
 import os
 import sys
 import codecs
-import urllib.request
-import urllib.error
-import shutil
 import pickle
 
 
