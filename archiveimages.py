@@ -30,7 +30,7 @@ threads = []
 imagemap = {}
 imagepostmap = {}
 orphanimagemaps = {}
-primaryname = sys.argv[1]
+primaryname = sys.argv[1] + "_threads"
 
 textreader = codecs.getreader("utf-8")
 

@@ -25,7 +25,8 @@ import config
 highestpickledthread = 0
 failedthreads = []
 threads = []
-primaryname = sys.argv[1]
+primaryname = sys.argv[1] + "_threads"
+board = sys.argv[2]
 
 textreader = codecs.getreader("utf-8")
 
@@ -57,7 +58,7 @@ with open(primaryname, mode="rt") as f:
         while (error < 3) and not docont:
             try:
                 docont = True
-                newRequest = urllib.request.Request("{}/_/api/chan/thread/?board=mlp&num={}".format(config.ARCHIVE_SITE, line))
+                newRequest = urllib.request.Request("{}/_/api/chan/thread/?board={}&num={}".format(config.ARCHIVE_SITE, board, line))
                 newRequest.add_header("user-agent", config.UA.format(vinfo=sys.version_info))
                 jsonresp = json.load(textreader(
                     urllib.request.urlopen(newRequest)))

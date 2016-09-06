@@ -1,0 +1,4 @@
+$ spiderthreadlist.py PROJECTNAME BOARD THREADID
+$ downloadthreaddata.py PROJECTNAME BOARD
+$ cleanpickle.py PROJECTNAME
+$ archiveimages.py PROJECTNAME
